@@ -130,7 +130,6 @@ jQuery(document).ready(function($){
 	});
 
 	$(".main_menu .show-5").click(function(){
-		loadScript();
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
 				'background-image' : 'url(images/bg-contact.jpg)',
@@ -140,7 +139,6 @@ jQuery(document).ready(function($){
 	});
 
 		$(".main_menu .show-6").click(function(){
-		loadScript();
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
 				'background-image' : 'url(images/bg-contact.jpg)',

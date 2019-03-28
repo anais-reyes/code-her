@@ -32,11 +32,15 @@ http://www.templatemo.com/tm-402-genius
     <!-- JavaScripts -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
     <!--[if lt IE 8]>
 	<div style=' clear: both; text-align:center; position: relative;'>
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
         </div>
+        
     <![endif]-->
+    
 </head>
 <body>
     
@@ -129,9 +133,8 @@ http://www.templatemo.com/tm-402-genius
                             <div class="content-inner">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h3 class="widget-title">What is our goal?</h3>
-                                        <p>Our goal is to give you free website templates that you can use for any purpose. Genius is free HTML5 CSS3 template from <span class="blue">template</span><span class="green">mo</span>. This template can be viewed in tablets and mobile devices.</p>
-                                        <p>Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for background images used in this template. This layout is based on <a rel="nofollow" href="http://getbootstrap.com">Bootstrap</a> responsive framework. Home and Gallery pages are integrated with <a rel="nofollow" href="https://github.com/duncanmcdougall/Responsive-Lightbox">Responsive Lightbox</a> for images.</p>
+                                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
                                     </div> <!-- /.col-md-7 -->
                                 </div> <!-- /.row -->
                             
@@ -358,14 +361,44 @@ http://www.templatemo.com/tm-402-genius
                             <div class="content-inner">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h3 class="widget-title">Intro a las graficas
-                                        </h3>
                                     </div> <!-- /.col-md-12 -->
                                 </div> <!-- /.row -->
                                 <div class="row services">
                                     <div class="col-md-4 col-sm-6">
-                                 <h2 class="page-title">Aqui van las graficas</h2>
-  
+                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true" onclick="createChart('general')">General</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" id="behind-tab" data-toggle="tab" href="#behind" role="tab" aria-controls="behind" aria-selected="false" onclick="createChart('behind')">Detrás de cámaras</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" aria-controls="front" aria-selected="false" onclick="createChart('front')">Frente a la cámara</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="genre-tab" data-toggle="tab" href="#genre" role="tab" aria-controls="genre" aria-selected="false" onclick="createChart('genre')">Por género</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false" onclick="createChart('country')">Por país de origen</a>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                                        <canvas id="generalChart"></canvas>
+                                    </div>
+                                    <div class="tab-pane fade" id="behind" role="tabpanel" aria-labelledby="behind-tab">
+                                        <canvas id="behindChart"></canvas>
+                                    </div>
+                                    <div class="tab-pane fade" id="front" role="tabpanel" aria-labelledby="front-tab">
+                                        <canvas id="frontChart"></canvas>
+                                    </div>
+                                    <div class="tab-pane fade" id="genre" role="tabpanel" aria-labelledby="genre-tab">
+                                        <canvas id="genreChart"></canvas>
+                                    </div>
+                                    <div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
+                                        <canvas id="countryChart"></canvas>
+                                    </div>
+                                  </div>
                                     </div> <!-- /.col-md-4 -->
                                 </div> <!-- /.row -->
                             </div> <!-- /.content-inner -->
@@ -436,34 +469,14 @@ http://www.templatemo.com/tm-402-genius
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /.main-content -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
-    <script>
-        function initialize() {
-          var mapOptions = {
-            zoom: 15,
-            center: new google.maps.LatLng(16.832179,96.134976)
-          };
-
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
-        }
-
-        function loadScript() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-              'callback=initialize';
-          document.body.appendChild(script);
-        }
-
-    </script>
     <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
 <!-- templatemo 402 genius -->
 </body>
 </html>
