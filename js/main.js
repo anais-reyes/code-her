@@ -43,5 +43,8 @@ movies.forEach((element, i) => {
         document.getElementById('Grid').innerHTML += item;
       }
 
-})
+
+
+
+});
 }
