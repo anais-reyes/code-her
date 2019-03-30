@@ -35,9 +35,9 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Lato', serif; color: white; }
 
 .content { display: none; }
 
-.page-header { padding: 20px 30px; margin: 0; border-bottom: 1px solid #9ae1e2; }
+.page-header { padding: 20px 30px; margin: 0; border-bottom: 2px solid #9ae1e2; margin-bottom: 20px;  }
 
-.page-title { font-size: 20px; text-transform: uppercase; margin: 0; }
+.page-title { font-size: 20px; text-transform: uppercase; margin: 0; margin-bottom: 20px; text-align: left;}
 
 .content-inner { padding: 30px; }
 
@@ -60,7 +60,9 @@ select::-ms-expand { display: none; }
 --------------------------------------------------------*/
 .homepage { text-align: center; margin: 0 auto; }
 
-.portfolio-item { overflow: hidden; margin-left: auto; margin-right: auto; margin-bottom: 30px; position: relative; border: 3px solid rgba(0, 0, 0, 0.4); width: 200px; height: 200px; }
+.portfolio-item { overflow: hidden; margin-left: auto; margin-right: auto; margin-bottom: 30px; position: relative; border: 3px solid rgba(0, 0, 0, 0.4);-webkit-box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75); width: auto; height: auto; }
 .portfolio-item img { height: 100%; overflow: hidden; }
 .portfolio-item .overlay { background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; visibility: hidden; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 .portfolio-item .overlay a { position: absolute; width: 40px; height: 40px; background-color: #9ae1e2; text-align: center; line-height: 40px; color: white; top: 50%; left: 50%; margin: -20px 0 0 -20px; }
@@ -111,12 +113,12 @@ select::-ms-expand { display: none; }
 .filter-work { text-align: right; width: 180px; position: relative; }
 
 .toggle-filter { width: 180px; height: 40px; background-color: black; display: inline-block; text-align: left; line-height: 40px; padding-left: 15px; color: white; position: relative; }
-.toggle-filter:hover { color: #9ae1e2; }
+.toggle-filter:hover { color: #ca3074; }
 .toggle-filter:after { font-family: 'FontAwesome'; content: '\f107'; width: 40px; height: 40px; background-color: #9ae1e2; display: inline-block; text-align: center; position: absolute; top: 0; right: 0; }
 
 .filter-controls { margin-left: -1px !important; position: absolute; top: 100%; right: 0; display: none; width: 180px; z-index: 9999; }
 .filter-controls li { width: 100%; height: 40px; line-height: 40px; background-color: rgba(0, 0, 0, 0.95); padding: 0 15px; text-align: left; border-top: 1px solid #222222; cursor: pointer; }
-.filter-controls li:active { width: 100%; height: 40px; line-height: 40px; background-color: rgba(0, 0, 0, 0.95); padding: 0 15px; text-align: left; border-top: 1px solid #222222; cursor: pointer; }
+.filter-controls li:active { width: 100%; height: 40px; line-height: 40px; background-color: rgba(0, 0, 0, 0.95); color: #ca3074; padding: 0 15px; text-align: left; border-top: 2px solid #222222; cursor: pointer; }
 /*------------------------------------------------------
 	Services Styles 
 --------------------------------------------------------*/
@@ -193,8 +195,11 @@ input.mainBtn { background-color: #9ae1e2; color: white; border: 0; outline: 0; 
 .main_menu li { padding: 20px; background-color: rgba(0, 0, 0, 0.7); border-bottom: 1px solid #333333; }
 .main_menu li:last-child { border-bottom: 0px; }
 .main_menu li a { color: #999999; display: block; font-size: 18px; }
-.main_menu li a:hover { color: #ca3074; border: 1px solid #ca3074; }
+.main_menu li a:hover { color: #ca3074;  }
 .main_menu li a i { margin-right: 15px; }
+
+
+.responsive_menu .main_menu li a:hover { color: #ca3074; border-bottom: 1px solid #ca3074; }
 
 /*-----------------------------------------------------------------------------------*/
 /*	SLIDER
@@ -234,3 +239,387 @@ IPHONE 4-4S-5 LANDSCAPE (568x320)
 IPHONE 4-4S-5 PORTRAIT (320x568)
 ********************************/
 @media only screen and (max-width: 450px) { .templatemo_logo img { width: 100%; height: auto; } }
+
+
+
+
+/********* CHF STYLES *********/
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+
+.mp-40 {
+  padding-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+
+ .login-button{
+  background-color: black;
+  color:#fff;
+  border:none;
+  font-weight: 700;
+
+ }
+
+.login-button:hover{
+  background-color: black;
+  color:#ca3074;
+  border:none;
+  font-weight: 700;
+
+ }
+
+
+.btn-facebook{
+  background-color: #3b5998;
+}
+
+.btn-twitter{
+  background-color: #00aced;
+}
+
+
+.btn-google-plus{
+  background-color: #ca3074;
+}
+
+.btn-iniciar{
+  background-color: #9ae1e2;
+  color:#fff;
+}
+
+
+.btn-create{
+  background-color: #9ae1e2;
+  color:#fff;
+}
+
+.btn-iniciar:hover{
+  background-color: #fff;
+  color:#9ae1e2;
+}
+
+
+.btn-create:hover{
+  background-color: #fff ;
+  color:#9ae1e2;
+}
+
+/*modal login */
+
+.form-horizontal .control-label { padding-top: 0; }
+.form-horizontal.templatemo-payment-form .radio.templatemo-no-padding-top { padding-top: 0; }
+.control-wrapper {
+  position: relative;
+  padding-left: 30px;
+}
+.control-wrapper label.fa-label {
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+.form-group:last-child { margin-bottom: 0; }
+.form-horizontal .control-label { margin-bottom: 10px; }
+.table { margin-bottom: 0; }
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, 
+.table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  vertical-align: middle;
+}
+.templatemo-form-list-container { max-width: 600px; }
+.templatemo-input-icon-container { position: relative; }
+.templatemo-input-icon-container .fa {
+  color: gray;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.templatemo-input-icon-container input, 
+.templatemo-input-icon-container textarea {
+  padding-left: 30px;
+}
+.templatemo-container {
+  background-color: rgba(0,0,0,0.8);
+-webkit-box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
+  margin: 0 auto;
+  padding: 30px;
+}
+.templatemo-bg-gray { background-color: #eee; }
+.templatemo-bg-gray h1 { color: rgb(74, 164, 180); }
+.templatemo-bg-image-1 {
+  background-color: rgb(60,60,60);
+  background-image: url(../images/templatemo-bg-1.jpg); 
+}
+.templatemo-bg-image-2 {
+  background-color: rgb(70, 90, 40);
+  background-image: url(../images/templatemo-bg-2.jpg);
+}
+.templatemo-bg-image-1, .templatemo-bg-image-2 {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+}
+.templatemo-bg-image-1, .templatemo-bg-image-2 { background-size: cover; }
+.font-size-small { font-size: 0.8em; }
+.margin-bottom-15 { margin-bottom: 15px; }
+.margin-bottom-30 { margin-bottom: 30px; }
+.form-group { margin-bottom: 20px; }
+.form-group a { line-height: 34px; }
+.fa { font-size: 16px; }
+.fa.login-with {
+  font-size: 30px;
+  margin: 0 5px;
+}
+.fa-medium { font-size: 20px; }
+.inline-block { display: inline-block; }
+
+
+.templatemo-login-form-2 {
+  /*background-color: rgba(13,13,13,0.25);*/
+  background-color: black;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 300;
+  max-width: 650px;
+  padding: 0 30px 30px 30px;
+  margin: 30px auto 0 auto;
+}
+.templatemo-login-form-2 h1 { color: #fff; margin-bottom: 40px; }
+.templatemo-login-form-2 a { color: #DBDBDB; }
+.templatemo-login-form-2 .form-control {
+  background-color: rgba(83, 78, 78, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.27);
+  color: rgb(255,255,255);
+}
+.templatemo-login-form-2 .templatemo-input-icon-container .fa { color: rgb(190, 190, 190); }
+.templatemo-login-form-2 .control-label { margin-bottom: 10px; }
+.templatemo-login-form-2 .btn { width: 100%; }
+.templatemo-login-form-2 .btn-social { max-width: 220px; }
+.templatemo-login-form-2 label { font-weight: 400; }
+.templatemo-login-form-2 .templatemo-one-signin { border-right: 1px solid rgba(200, 200, 200, 0.5); }
+
+@media screen and (max-width: 991px) {
+  .templatemo-login-form-2 .templatemo-one-signin {
+    border-right: none;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+  }
+  .templatemo-login-form-2 .templatemo-other-signin { padding-top: 30px; }
+  .templatemo-login-form-2 .form-group:last-child { margin-bottom: 30px; }
+  .templatemo-create-account .col-md-6, .templatemo-create-account .col-md-12 {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  .templatemo-create-account .form-group { margin-bottom: 0; }
+  .templatemo-radio-group { margin-top: 0; }
+  .templatemo-contact-form-2 .checkbox {  margin-bottom: 15px; }
+  .templatemo-contact-form-2 { padding: 30px 30px 0 30px; }
+  .templatemo-radio-container { margin-left: 30px; }
+}
+
+5. create-account
+---------------------------------------*/
+.templatemo-create-account {
+  background-color: #000;
+  border: none;
+  max-width: 700px; 
+}
+.templatemo-create-account label { font-weight: 400; }
+.templatemo-create-account input[type='checkbox'] {
+  margin-right: 10px;
+  position: relative;
+  top: -1.5px;
+}
+.templatemo-radio-group { margin-top: 30px; }
+/*fin de crear cuenta*/
+
+/*Pagination*/
+.pagination {
+
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+    background-color: black;
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+      background-color: black;
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid #000;
+  margin-left: -1px;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+      background-color: black;
+  margin-left: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+      background-color: black;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.pagination > li > a:hover, .pagination > li > a:focus,
+.pagination > li > span:hover,
+.pagination > li > span:focus {
+    background-color: black;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: black;
+  background-color: #000;
+  border-color: #000;
+  cursor: default;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #999999;
+  background-color: black;
+  border-color: #000;
+  cursor: not-allowed;
+}
+
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  list-style: none;
+  text-align: center;
+}
+.pager:before, .pager:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.pager:after {
+  clear: both;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: black;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #000;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #999999;
+  background-color: black;
+  cursor: not-allowed;
+}
+
+
+/*fin de pagination*/
+
+
+/*Descripción Test*/
+
+
+.test-button{
+  font-size: 20px;
+}
+
+
+.test-button:hover{
+  color: #000;
+  background-color: #ca3074;
+}
+
+.test-button:focus{
+  color:#9ae1e2;
+  border: 1px solid #9ae1e2;
+
+}
+
+.test-button:active{
+  color:#9ae1e2;
+ 
+}
+
+.test-button li:visited{
+  color:#333;
+  border: 1px solid #9ae1e2;
+  
+}
+
+
+/* Fin Descripción Test*/

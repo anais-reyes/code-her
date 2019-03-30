@@ -13,26 +13,27 @@
 Genius Template
 http://www.templatemo.com/tm-402-genius
 -->
-    <meta name="author" content="templatemo">
-    <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
-    
-    <!-- CSS Bootstrap & Custom -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="css/templatemo_misc.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link href="css/templatemo_style.css" rel="stylesheet" media="screen">
-    
-    <!-- Favicons -->
-        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+<meta name="author" content="templatemo">
+<meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
 
-    
-    <!-- JavaScripts -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+<!-- CSS Bootstrap & Custom -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/templatemo_misc.css">
+<link rel="stylesheet" href="css/animate.css">
+<link href="css/templatemo_style.css" rel="stylesheet" media="screen">
+
+<!-- Favicons -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="shortcut icon" href="assets/img/favicon.png">
+
+
+<!-- JavaScripts -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
 
     <!--[if lt IE 8]>
 	<div style=' clear: both; text-align:center; position: relative;'>
@@ -43,21 +44,49 @@ http://www.templatemo.com/tm-402-genius
     
 </head>
 <body>
-    
-    
+
+
+
+
+
+
+
     <div class="bg-image"></div>
     <div class="overlay-bg"></div>
 
-    
+    <!--Selector de Idioma -->
     <div class="container language-select visible-md visible-lg">
         <div class="row">
             <div class="col-md-12">
-                <select name="cat2" id="cat2" class="postform">
-                    <option value="0">-- Seleccionar idioma--</option>
-                    <option class="level-0" value="1">Español</option>
-                    <option class="level-0" value="2">English</option>
-                </select>
+                <div class="col-md-2">
+                    <select name="cat2" id="cat2" class="postform">
+                        <option value="0">-- Seleccionar idioma--</option>
+                        <option class="level-0" value="1">Español</option>
+                        <option class="level-0" value="2">English</option>
+                    </select>
+                </div>
+                <!--Bienvenida Usuario-->        
+                <a class="#userprofile"> <i class="fa fa-user"></i>        </a>
+                <p> Bienvenida Mary Shelley</p>
+
+                <!-- Fin Bienvenida Usuario-->   
+
+                <!--Boton Iniciar Sesión-->        
+
+                <button type="button" class="login-button" data-toggle="modal" data-target="#login-modal"> Iniciar sesión</button>
+
+                <!-- Fin Botón Iniciar/Cerrar Sesión /-->
+
+                                <!--Boton Iniciar Sesión-->        
+
+                <button type="button" class="login-button" data-toggle="modal" data-target="#create-account-modal"> Crear cuenta</button>
+
+                <!-- Fin Botón Iniciar/Cerrar Sesión /-->      
+
             </div> <!-- /.col-md-12 -->
+
+
+
         </div> <!-- /.row -->
     </div> <!-- /.language-select -->
 
@@ -68,6 +97,22 @@ http://www.templatemo.com/tm-402-genius
         </a>
         <div class="responsive_menu">
             <ul class="main_menu">
+                                <a class="#userprofile"> <i class="fa fa-user"></i>        </a>
+                <p> Bienvenida Mary Shelley</p>
+
+                <!-- Fin Bienvenida Usuario-->   
+
+                <!--Boton Iniciar Sesión-->        
+
+                <button type="button" class="login-button" data-toggle="modal" data-target="#login-modal"> Iniciar sesión</button>
+
+                <!-- Fin Botón Iniciar/Cerrar Sesión /-->
+
+                                <!--Boton Iniciar Sesión-->        
+
+                <button type="button" class="login-button" data-toggle="modal" data-target="#create-account-modal"> Crear cuenta</button>
+
+                <!-- Fin Botón Iniciar/Cerrar Sesión /-->    
                 <li><a class="show-1 homebutton" href="#"><i class="fa fa-home"></i>Inicio</a></li>
                 <li><a class="show-2" href="views/about.html"><i class="fa fa-group"></i>Acerca de</a></li>
                 <li><a class="show-3" href="#"><i class="fa fa-film"></i>Películas</a></li>
@@ -87,7 +132,7 @@ http://www.templatemo.com/tm-402-genius
                     <div class="main_menu">
                         <ul class="menu">
                             <li><a class="show-1 homebutton" href="#" data-toggle="tooltip" data-original-title="Inicio"><i class="fa fa-home"></i></a></li>
-                            <li><a class="show-2" href="views/about.html" data-toggle="tooltip" data-original-title="Acerca de"><i class="fa fa-user"></i></a></li>
+                            <li><a class="show-2" href="views/about.html" data-toggle="tooltip" data-original-title="Acerca de"><i class="fa fa-book"></i></a></li>
                             <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="Películas"><i class="fa fa-film"></i></a></li>
                             <li><a class="show-4" href="#" data-toggle="tooltip" data-original-title="Tests"><i class="fa fa-tasks"></i></a></li>
                             <li><a class="show-5" href="#" data-toggle="tooltip" data-original-title="Gráficas"><i class="fa fa-chart-pie"></i></i></a></li>
@@ -97,7 +142,7 @@ http://www.templatemo.com/tm-402-genius
                 </div> <!-- /.col-md-2 -->
 
                 <!-- Begin Content -->
-                <div class="col-md-10">
+                <div class="col-md-10 pl-40">
 
                     <div class="row">
                         <div class="col-md-12">
@@ -113,370 +158,1462 @@ http://www.templatemo.com/tm-402-genius
                     <div id="menu-container">
 
 
-                        
+
                         <div id="menu-1" class="homepage">
 
 
 
                             <div class="row" id="content-wrapper">
-                            	                        	     <div class="page-header">
-                                <h2 class="page-title">Últimas películas añadidas</h2>
-                            </div> <!-- /.page-header -->
-                                
+                                <div class="page-header mb-40">
+                                    <h2 class="page-title">Últimas películas añadidas</h2>
+                                </div> <!-- /.page-header -->
+
+
                             </div> <!-- /.row -->
-                        </div> <!-- /.homepage -->
 
-                        <div id="menu-2" class="content about-us">
-                            <div class="page-header">
-                                <h2 class="page-title">Acerca de</h2>
-                            </div> <!-- /.page-header -->
-                            <div class="content-inner">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                                    </div> <!-- /.col-md-7 -->
-                                </div> <!-- /.row -->
-                            
-                            </div> <!-- /.content-inner -->
-                        </div> <!-- /.about-us -->
+                            <!-- Pagination home-->
+                            <nav aria-label="Page navigation example">
+                              <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                  <a class="page-link" href="#">Siguiente</a>
+                              </li>
+                          </ul>
+                      </nav><!-- Pagination home-->                       
 
-                        <div id="menu-3" class="content our-gallery">
-                            <div class="page-header">
-                                <h2 class="page-title">Catálogo</h2>
-                            </div> <!-- /.page-header -->
-                            <div class="content-inner">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h3 class="widget-title">Péliculas Evaluadas</h3>
-                                    </div> <!-- /.col-md-6 -->
-                                    <div class="col-md-6">
-                                        <div class="filter-work pull-right">
-                                            <a href="#nogo" class="toggle-filter">Filtrar por</a>
-                                            <ul class="filter-controls controls">
-                                                <li class="filter" data-filter="all">Todas</li>
-                                                <li class="filter" data-filter="branding">Aprobadas</li>
-                                                <li class="filter" data-filter="graphic">No Aprobadas</li>
-                                            </ul>
-                                        </div> <!-- /.filter-work -->
-                                    </div> <!-- /.col-md-6 -->
-                                </div> <!-- /.row -->
-                                <div class="row">
-                                    <div id="Grid">
-                                        <div class="col-md-4 col-sm-6 mix graphic">
-                                            <div class="gallery-item">
-                                                <div class="gallery-thumb">
-                                                    <img src="images/gallery/p1.jpg" alt="">
-                                                    <div class="overlay-g">
-                                                        <a href="images/gallery/p1.jpg" data-rel="lightbox" class="fa fa-search"></a>
-                                                    </div>
-                                                </div> <!-- /.gallery-thumb -->
-                                                <div class="gallery-content">
-                                                    <h4 class="gallery-title">Project Title One</h4>    
-                                                    <span class="gallery-category">Graphic Design</span>
-                                                </div> <!-- /.gallery-content -->
-                                            </div> <!-- /.gallery-item -->
-                                        </div> <!-- /.col-md-4 -->
-                                        <div class="col-md-4 col-sm-6 mix branding">
-                                            <div class="gallery-item">
-                                                <div class="gallery-thumb">
-                                                    <img src="images/gallery/p2.jpg" alt="">
-                                                    <div class="overlay-g">
-                                                        <a href="images/gallery/p2.jpg" data-rel="lightbox" class="fa fa-search"></a>
-                                                    </div>
-                                                </div> <!-- /.gallery-thumb -->
-                                                <div class="gallery-content">
-                                                    <h4 class="gallery-title">Project Title Two</h4>    
-                                                    <span class="gallery-category">Branding</span>
-                                                </div> <!-- /.gallery-content -->
-                                            </div> <!-- /.gallery-item -->
-                                        </div> <!-- /.col-md-4 -->
-                                        <div class="col-md-4 col-sm-6 mix nature">
-                                            <div class="gallery-item">
-                                                <div class="gallery-thumb">
-                                                    <img src="images/gallery/p3.jpg" alt="">
-                                                    <div class="overlay-g">
-                                                        <a href="images/gallery/p3.jpg" data-rel="lightbox" class="fa fa-search"></a>
-                                                    </div>
-                                                </div> <!-- /.gallery-thumb -->
-                                                <div class="gallery-content">
-                                                    <h4 class="gallery-title">Project Title Three</h4>    
-                                                    <span class="gallery-category">Nature</span>
-                                                </div> <!-- /.gallery-content -->
-                                            </div> <!-- /.gallery-item -->
-                                        </div> <!-- /.col-md-4 -->
-                                        <div class="col-md-4 col-sm-6 mix branding">
-                                            <div class="gallery-item">
-                                                <div class="gallery-thumb">
-                                                    <img src="images/gallery/p4.jpg" alt="">
-                                                    <div class="overlay-g">
-                                                        <a href="images/gallery/p4.jpg" data-rel="lightbox" class="fa fa-search"></a>
-                                                    </div>
-                                                </div> <!-- /.gallery-thumb -->
-                                                <div class="gallery-content">
-                                                    <h4 class="gallery-title">Project Title Four</h4>    
-                                                    <span class="gallery-category">Branding</span>
-                                                </div> <!-- /.gallery-content -->
-                                            </div> <!-- /.gallery-item -->
-                                        </div> <!-- /.col-md-4 -->
-                                        <div class="col-md-4 col-sm-6 mix graphic">
-                                            <div class="gallery-item">
-                                                <div class="gallery-thumb">
-                                                    <img src="images/gallery/p5.jpg" alt="">
-                                                    <div class="overlay-g">
-                                                        <a href="images/gallery/p5.jpg" data-rel="lightbox" class="fa fa-search"></a>
-                                                    </div>
-                                                </div> <!-- /.gallery-thumb -->
-                                                <div class="gallery-content">
-                                                    <h4 class="gallery-title">Project Title Five</h4>    
-                                                    <span class="gallery-category">Graphic Design</span>
-                                                </div> <!-- /.gallery-content -->
-                                            </div> <!-- /.gallery-item -->
-                                        </div> <!-- /.col-md-4 -->
-                                        <div class="col-md-4 col-sm-6 mix nature">
-                                            <div class="gallery-item">
-                                                <div class="gallery-thumb">
-                                                    <img src="images/gallery/p6.jpg" alt="">
-                                                    <div class="overlay-g">
-                                                        <a href="images/gallery/p6.jpg" data-rel="lightbox" class="fa fa-search"></a>
-                                                    </div>
-                                                </div> <!-- /.gallery-thumb -->
-                                                <div class="gallery-content">
-                                                    <h4 class="gallery-title">Project Title Six</h4>    
-                                                    <span class="gallery-category">Nature</span>
-                                                </div> <!-- /.gallery-content -->
-                                            </div> <!-- /.gallery-item -->
-                                        </div> <!-- /.col-md-4 -->
-                                    </div> <!-- /#Grid -->
-                                </div> <!-- /.row -->
-                            </div> <!-- /.content-inner -->
+                  </div> <!-- /.homepage -->
 
-                        </div> <!-- /.our-gallery -->
+                  <!-- Acerca de -->
 
-                        <div id="menu-4" class="content">
-                            <div class="page-header">
-                                <h2 class="page-title">Tests</h2>
-                            </div> <!-- /.page-header -->
-                            <div class="content-inner">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 class="widget-title">Introducción a los tests utilizados</h3>
-                                    </div> <!-- /.col-md-12 -->
-                                </div> <!-- /.row -->
-                                <div class="row services">
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <i class="fa fa-heart-o"></i>
-                                                    </div>
-                                                    <h4 class="service-title">HTML5 CSS3</h4>
-                                                </div>
-                                            </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <i class="fa fa-flask"></i>
-                                                    </div>
-                                                    <h4 class="service-title">Web Marketing</h4>
-                                                </div>
-                                            </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <i class="fa fa-money"></i>
-                                                    </div>
-                                                    <h4 class="service-title">Cost Effective</h4>
-                                                </div>
-                                            </div>
-                                            <div class="body">Download free <a rel="nofollow" href="http://www.tooplate.com">templates</a> for your websites. Nullam viverra dolor fermentum erat ullamcorper, sit amet mattis nibh tempus.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <i class="fa fa-eye"></i>
-                                                    </div>
-                                                    <h4 class="service-title">Retina Ready</h4>
-                                                </div>
-                                            </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <i class="fa fa-mobile-phone"></i>
-                                                    </div>
-                                                    <h4 class="service-title">Responsive</h4>
-                                                </div>
-                                            </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                    <div class="col-md-4 col-sm-6">
-                                        <div class="service">
-                                            <div class="header">
-                                                <div class="header-bg"></div>
-                                                <div class="service-header">
-                                                    <div class="icon">
-                                                        <i class="fa fa-cogs"></i>
-                                                    </div>
-                                                    <h4 class="service-title">Settings</h4>
-                                                </div>
-                                            </div>
-                                            <div class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer magna felis, laoreet sed pulvinar mattis, aliquet non mauris.</div>
-                                        </div>
-                                    </div> <!-- /.col-md-4 -->
-                                </div> <!-- /.row -->
-                            </div> <!-- /.content-inner -->
+                  <div id="menu-2" class="content about-us">
+                    <div class="page-header">
+                        <h2 class="page-title">Acerca de</h2>
+                    </div> <!-- /.page-header -->
+                    <div class="content-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                            </div> <!-- /.col-md-7 -->
 
-                        </div> <!-- /.services -->
+                        </div>
+                        <div>
+  <a href="javascript:;" data-toggle="modal" data-target="#terms_modal">Términos y Condiciones</a>
+                       </div> 
+                        <div>
+  <a href="javascript:;" data-toggle="modal" data-target="#privacy_modal"> 
+
+ Política de Privacidad.</a>
+
+                       </div>
 
 
-                        <div id="menu-5" class="content">
-                            <div class="page-header">
-                                <h2 class="page-title">Gráficas</h2>
-                            </div> <!-- /.page-header -->
-                            <div class="content-inner">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                    </div> <!-- /.col-md-12 -->
-                                </div> <!-- /.row -->
-                                <div class="row services">
-                                    <div class="col-md-4 col-sm-6">
-                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                      <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true" onclick="createChart('general')">General</a>
-                                    </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" id="behind-tab" data-toggle="tab" href="#behind" role="tab" aria-controls="behind" aria-selected="false" onclick="createChart('behind')">Detrás de cámaras</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" aria-controls="front" aria-selected="false" onclick="createChart('front')">Frente a la cámara</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="genre-tab" data-toggle="tab" href="#genre" role="tab" aria-controls="genre" aria-selected="false" onclick="createChart('genre')">Por género</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false" onclick="createChart('country')">Por país de origen</a>
-                                    </li>
-                                  </ul>
-                                  <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-                                        <canvas id="generalChart"></canvas>
+                       <!-- /.row -->
+
+                   </div> <!-- /.content-inner -->
+               </div> <!-- /.about-us -->
+                      
+
+           <div id="menu-3" class="content our-gallery">
+            <div class="page-header">
+                <h2 class="page-title">Catálogo</h2>
+            </div> <!-- /.page-header -->
+            <div class="content-inner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="widget-title">Péliculas Evaluadas</h3>
+                    </div> <!-- /.col-md-6 -->
+                    <div class="col-md-6">
+                        <div class="filter-work pull-right">
+                            <a href="#nogo" class="toggle-filter">Filtrar por</a>
+                            <ul class="filter-controls controls">
+                                <li class="filter" data-filter="all">Todas</li>
+                                <li class="filter" data-filter="Aprobada">Aprobadas</li>
+                                <li class="filter" data-filter="Reprobada">No Aprobadas</li>
+                            </ul>
+                        </div> <!-- /.filter-work -->
+                    </div> <!-- /.col-md-6 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div id="Grid">
+                        <div class="col-md-4 col-sm-6 mix Aprobada">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/gallery/p1.jpg" alt="">
+                                    <div class="overlay-g">
+                                        <a href="images/gallery/p1.jpg" data-rel="lightbox" class="fa fa-search"></a>
                                     </div>
-                                    <div class="tab-pane fade" id="behind" role="tabpanel" aria-labelledby="behind-tab">
-                                        <canvas id="behindChart"></canvas>
+                                </div> <!-- /.gallery-thumb -->
+                                <div class="gallery-content">
+                                    <h4 class="gallery-title">Título</h4>    
+                                    <span class="gallery-title">Año de Producción</span>
+                                    <span class="gallery-category">Aprobada</span>
+                                </div> <!-- /.gallery-content -->
+                            </div> <!-- /.gallery-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4 col-sm-6 mix Aprobada">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/gallery/p2.jpg" alt="">
+                                    <div class="overlay-g">
+                                        <a href="images/gallery/p2.jpg" data-rel="lightbox" class="fa fa-search"></a>
                                     </div>
-                                    <div class="tab-pane fade" id="front" role="tabpanel" aria-labelledby="front-tab">
-                                        <canvas id="frontChart"></canvas>
+                                </div> <!-- /.gallery-thumb -->
+                                <div class="gallery-content">
+                                    <h4 class="gallery-title">Título</h4>    
+                                    <span class="gallery-title">Año de Producción</span>
+                                    <span class="gallery-category">Aprobada</span>
+                                </div> <!-- /.gallery-content -->
+                            </div> <!-- /.gallery-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4 col-sm-6 mix Aprobada">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/gallery/p3.jpg" alt="">
+                                    <div class="overlay-g">
+                                        <a href="images/gallery/p3.jpg" data-rel="lightbox" class="fa fa-search"></a>
                                     </div>
-                                    <div class="tab-pane fade" id="genre" role="tabpanel" aria-labelledby="genre-tab">
-                                        <canvas id="genreChart"></canvas>
+                                </div> <!-- /.gallery-thumb -->
+                                <div class="gallery-content">
+                                    <h4 class="gallery-title">Título</h4>    
+                                    <span class="gallery-title">Año de Producción</span>
+                                    <span class="gallery-category">Aprobada</span>
+                                </div> <!-- /.gallery-content -->
+                            </div> <!-- /.gallery-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4 col-sm-6 mix Aprobada">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/gallery/p4.jpg" alt="">
+                                    <div class="overlay-g">
+                                        <a href="images/gallery/p4.jpg" data-rel="lightbox" class="fa fa-search"></a>
                                     </div>
-                                    <div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
-                                        <canvas id="countryChart"></canvas>
+                                </div> <!-- /.gallery-thumb -->
+                                <div class="gallery-content">
+                                    <h4 class="gallery-title">Título</h4>    
+                                    <span class="gallery-title">Año de Producción</span>
+                                    <span class="gallery-category">Aprobada</span>
+                                </div> <!-- /.gallery-content -->
+                            </div> <!-- /.gallery-item -->
+                        </div> <!-- /.col-md-4 -->
+                        <div class="col-md-4 col-sm-6 mix Reprobada">
+                            <div class="gallery-item">
+                                <div class="gallery-thumb">
+                                    <img src="images/gallery/p5.jpg" alt="">
+                                    <div class="overlay-g">
+                                        <a href="images/gallery/p5.jpg" data-rel="lightbox" class="fa fa-search"></a>
                                     </div>
-                                  </div>
-                                    </div> <!-- /.col-md-4 -->
-                                </div> <!-- /.row -->
-                            </div> <!-- /.content-inner -->
-
-                        </div> <!-- /.graphs -->
-
-
-
-
-
-                        <div id="menu-6" class="content">
-                            <div class="page-header">
-                                <h2 class="page-title">Contacto</h2>
-                            </div> <!-- /.page-header -->
-                            <div class="content-inner">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <h3 class="widget-title">Envianos un mensaje</h3>
-                                        <p>Feel free to send us a message regarding this Genius HTML5 template. Pellentesque pulvinar, orci vel scelerisque suscipit, libero justo laoreet felis, ac consectetur est nisi quis ligula. Maecenas nec felis elit.</p>
-                                        <div class="row contact-form">
-                                            <div class="col-md-4">
-                                                <label for="name-id">Nombre:</label>
-                                                <input name="name-id" type="text" id="name-id" maxlength="40">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="email-id">E-mail:</label>
-                                                <input name="email-id" type="text" id="email-id" maxlength="40">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="subject-id">Asunto:</label>
-                                                <input name="subject-id" type="text" id="subject-id" maxlength="60">
-                                            </div>
-                                        </div> <!-- /.contact-form -->
-                                        <p class="full-row">
-                                            <label for="message">Mensaje:</label>
-                                            <textarea name="message" id="message" rows="6"></textarea>
-                                        </p>
-                                        <input class="mainBtn" type="submit" name="" value="Enviar">
-                                    </div> <!-- /.col-md-8 -->
-                                </div> <!-- /.row -->
-                            </div> <!-- /.content-inner -->
-
-                        </div> <!-- /.stay-in-touch -->
-                        
-                        <div class="site-footer">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="copyright-text">Copyright &copy; 2019 Bits, Bytes & Cookies
-                                    </p>
+                                </div> <!-- /.gallery-thumb -->
+                                <div class="gallery-content">
+                                  <h4 class="gallery-title">Título</h4>    
+                                  <span class="gallery-title">Año de Producción</span>
+                                  <span class="gallery-category">Reprobada</span>
+                              </div> <!-- /.gallery-content -->
+                          </div> <!-- /.gallery-item -->
+                      </div> <!-- /.col-md-4 -->
+                      <div class="col-md-4 col-sm-6 mix nature">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/gallery/p6.jpg" alt="">
+                                <div class="overlay-g">
+                                    <a href="images/gallery/p6.jpg" data-rel="lightbox" class="fa fa-search"></a>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="social-icons-footer">
-                                        <ul>
-                                            <li><a target="_parent" href="http://www.facebook.com/templatemo" class="fa fa-facebook"></a></li>
-                                            <li><a href="#" class="fa fa-twitter"></a></li>
-                                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                                            <li><a href="#" class="fa fa-instagram"></a></li>
-                                            <li><a href="#" class="fa fa-rss"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- /.site-footer -->
-
-                    </div> <!-- /.content-holder -->
-                
-                </div> <!-- /.col-md-10 -->
+                            </div> <!-- /.gallery-thumb -->
+                            <div class="gallery-content">
+                                <h4 class="gallery-title">Título</h4>    
+                                <span class="gallery-title">Año de Producción</span>
+                                <span class="gallery-category">Aprobada</span>
+                            </div> <!-- /.gallery-content -->
+                        </div> <!-- /.gallery-item -->
+                    </div> <!-- /.col-md-4 -->
+                </div> <!-- /#Grid -->
             </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /.main-content -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.mixitup.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.lightbox.js"></script>
-    <script src="js/templatemo_custom.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/charts.js"></script>
+
+                                        <!-- Pagination home-->
+                            <nav aria-label="Page navigation example">
+                              <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                  <a class="page-link" href="#">Siguiente</a>
+                              </li>
+                          </ul>
+                      </nav><!-- Pagination home-->   
+        </div> <!-- /.content-inner -->
+
+    </div> <!-- /.our-gallery -->
+
+    <div id="menu-4" class="content">
+        <div class="page-header">
+            <h2 class="page-title">Tests</h2>
+        </div> <!-- /.page-header -->
+        <div class="content-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="widget-title">Introducción a los tests utilizados</h3>
+                    <p class="mb-40">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. </p>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+
+
+
+<!-- filter-tests -->
+            <div class="row">
+                <div class="col-md-12">
+
+                        <div class="filter-work pull-right mb-40">
+                            <a href="#nogo" class="toggle-filter">Filtrar por</a>
+                            <ul class="filter-controls controls">
+                                <li class="filter" data-filter="all">Todas</li>
+                                <li class="filter" data-filter="Frontstage">Frente a Cámaras</li>
+                                <li class="filter" data-filter="Backstage">Detrás de Cámaras</li>
+                            </ul>
+                        </div> 
+                    </div> <!-- /.col-md-6 -->
+                </div>
+
+
+<!-- /.filter-tests -->
+
+            <div class="row services">
+
+
+
+
+
+
+
+
+                <div class="accordion" id="accordionTest">
+                  <div class="card col-md-6 col-sm-12">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOne">
+                          Bechdel -Wallace Test
+                      </button>
+                  </h2>
+
+              </div>
+              <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordionTest">
+                  <div class="card-body">
+                    <h3 class="mb-40">
+                     Autor: Liz Wallace & Allison Bechdel
+                 </h3>
+                 <h3 class="mb-40">
+                    Versión Original
+                </h3>
+                <p class="mb-40">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+                <h3 class="mb-40">
+                    Versión Code Her Film 
+                </h3>
+                <p class="mb-40">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </p>
+            </div>
+        </div>
+    </div> <!---end of card-->
+    <div class="card col-md-6 col-sm-12">
+        <div class="card-header" id="heading2">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Crystal Gems Test
+          </button>
+      </h2>
+
+  </div>
+  <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTest">
+      <div class="card-body">
+        <h3 class="mb-40">
+         Autor: Locuas
+     </h3>
+     <h3 class="mb-40">
+        Versión Original
+    </h3>
+    <p class="mb-40">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </p>
+    <h3 class="mb-40">
+        Versión Code Her Film 
+    </h3>
+    <p class="mb-40">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </p>
+</div>
+</div>
+</div> <!---end of card-->
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading3">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Deggans Rule
+      </button>
+  </h2>
+
+</div>
+<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Eric Deggans
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div> <!---end of card-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading4">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+         Dottle & Koeze Test
+      </button>
+  </h2>
+</div>
+<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Rachael Dottle & Ella Koeze
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 4-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading5">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+         Duvernay Test
+      </button>
+  </h2>
+</div>
+<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Ava Duvernay
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 5-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading6">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+         Ellen Willis Test
+      </button>
+  </h2>
+</div>
+<div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Ellen Willis
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 6-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading7">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+         Feldman Score
+      </button>
+  </h2>
+</div>
+<div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Rachel Feldman
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 7-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading8">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+         Female-Gaze
+      </button>
+  </h2>
+</div>
+<div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Jill Soloway, Laura Astorga, Mila Gisbert
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 8-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading9">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+         Furiosa
+      </button>
+  </h2>
+</div>
+<div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Sean M. Puckett
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 9-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading10">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+         Hagen Test
+      </button>
+  </h2>
+</div>
+<div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Kate Hagen
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 10-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading11">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+         Kent Test
+      </button>
+  </h2>
+</div>
+<div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Clarishka Kent
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 11-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading12">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+         Landau Test
+      </button>
+  </h2>
+</div>
+<div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Jill Soloway, Laura Astorga, Mila Gisbert
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 12-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading13">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+         Maisy Test (infantil)
+      </button>
+  </h2>
+</div>
+<div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Thalia Kehoe Rowden
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 13-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading14">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+         Mako Mori Test
+      </button>
+  </h2>
+</div>
+<div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Chaila
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 14-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading15">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+         Male-Gaze
+      </button>
+  </h2>
+</div>
+<div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Laura Mulvey
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 15-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading16">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+         Maniac-Pixie-Dream-Girl Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Nathan Rabin & Mila Gisber
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 16-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading17">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+         Morales Rule
+      </button>
+  </h2>
+</div>
+<div id="collapse17" class="collapse" aria-labelledby="heading17" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Natalie Morales
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 17-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading18">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+         Peirce Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse18" class="collapse" aria-labelledby="heading18" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Kimberley Peirce
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 18-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading19">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+         Raleigh Becket Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse19" class="collapse" aria-labelledby="heading19" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Joanna - Geekalitarian
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 19-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading120">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+         Reese Davies Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse20" class="collapse" aria-labelledby="heading20" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Kate Rees Davies
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 20-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading21">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+         Sexy Lamp Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Kelly Sue DeConnick
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 21-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading22">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+         Tauriel Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Jenn IRL
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 22-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading23">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+         The Ko Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse23" class="collapse" aria-labelledby="heading23" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Naomi Ko
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 23-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading24">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+         Uphold Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse24" class="collapse" aria-labelledby="heading24" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Rory Uphold
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 24-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading25">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+         Villalobos Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse25" class="collapse" aria-labelledby="heading25" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Ligiah Villalobos
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 25-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading26">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+         Villareal Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse26" class="collapse" aria-labelledby="heading26" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Lindsey Villareal
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 26-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading27">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+         Vito Russo Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse27" class="collapse" aria-labelledby="heading27" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Vito Russo
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 27-->
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading28">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+         Maniac-Pixie-Dream-Girl Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse28" class="collapse" aria-labelledby="heading28" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Nathan Rabin & Mila Gisber
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 28-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading29">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+         Waithe Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse29" class="collapse" aria-labelledby="heading29" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Lena Waithe
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 29-->
+
+
+<div class="card col-md-6 col-sm-12">
+    <div class="card-header" id="heading30">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed col-md-12 test-button" type="button" data-toggle="collapse" data-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+         White Test 
+      </button>
+  </h2>
+</div>
+<div id="collapse30" class="collapse" aria-labelledby="heading30" data-parent="#accordionTest">
+  <div class="card-body">
+    <h3 class="mb-40">
+     Autor: Jen White
+ </h3>
+ <h3 class="mb-40">
+    Versión Original
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+<h3 class="mb-40">
+    Versión Code Her Film 
+</h3>
+<p class="mb-40">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</p>
+</div>
+</div>
+</div><!--End of Card 30 -->
+
+<button class="btn login-button" href="#"><i class="fa fa-envelope"></i>Sugerir otro Test</button> 
+
+
+</div><!--End of Tests-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- /.col-md-4 -->
+</div> <!-- /.row -->
+</div> <!-- /.content-inner -->
+
+</div> <!-- /.services -->
+
+<!-------- Graficas ---------->
+<div id="menu-5" class="content">
+    <div class="page-header">
+        <h2 class="page-title">Gráficas</h2>
+    </div> <!-- /.page-header -->
+    <div class="content-inner">
+        <div class="row">
+            <div class="col-md-12">
+            </div> <!-- /.col-md-12 -->
+        </div> <!-- /.row -->
+        <div class="row services">
+            <div class="col-md-12 center">
+             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true" onclick="createChart('general')">General</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="behind-tab" data-toggle="tab" href="#behind" role="tab" aria-controls="behind" aria-selected="false" onclick="createChart('behind')">Detrás de cámaras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" aria-controls="front" aria-selected="false" onclick="createChart('front')">Frente a la cámara</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="genre-tab" data-toggle="tab" href="#genre" role="tab" aria-controls="genre" aria-selected="false" onclick="createChart('genre')">Por género</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false" onclick="createChart('country')">Por país de origen</a>
+            </li>
+        </ul>
+        <div class="tab-content col-md-10" id="myTabContent">
+            <div class="tab-pane fade show active " id="general" role="tabpanel" aria-labelledby="general-tab">
+                <canvas id="generalChart"></canvas>
+            </div>
+            <div class="tab-pane fade" id="behind" role="tabpanel" aria-labelledby="behind-tab">
+                <canvas id="behindChart"></canvas>
+            </div>
+            <div class="tab-pane fade" id="front" role="tabpanel" aria-labelledby="front-tab">
+                <canvas id="frontChart"></canvas>
+            </div>
+            <div class="tab-pane fade" id="genre" role="tabpanel" aria-labelledby="genre-tab">
+                <canvas id="genreChart"></canvas>
+            </div>
+            <div class="tab-pane fade" id="country" role="tabpanel" aria-labelledby="country-tab">
+                <canvas id="countryChart"></canvas>
+            </div>
+        </div>
+    </div> <!-- /.col-md-4 -->
+</div> <!-- /.row -->
+</div> <!-- /.content-inner -->
+
+</div> <!-- /.graphs -->
+
+
+
+
+
+<div id="menu-6" class="content">
+    <div class="page-header">
+        <h2 class="page-title">Contacto</h2>
+    </div> <!-- /.page-header -->
+    <div class="content-inner">
+        <div class="row">
+            <div class="col-md-10">
+                <h3 class="widget-title">Envianos un mensaje</h3>
+                <p>Feel free to send us a message regarding this Genius HTML5 template. Pellentesque pulvinar, orci vel scelerisque suscipit, libero justo laoreet felis, ac consectetur est nisi quis ligula. Maecenas nec felis elit.</p>
+                <div class="row contact-form">
+                    <div class="col-md-4">
+                        <label for="name-id">Nombre:</label>
+                        <input name="name-id" type="text" id="name-id" maxlength="40">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email-id">E-mail:</label>
+                        <input name="email-id" type="text" id="email-id" maxlength="40">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="subject-id">Asunto:</label>
+                        <input name="subject-id" type="text" id="subject-id" maxlength="60">
+                    </div>
+                </div> <!-- /.contact-form -->
+                <p class="full-row">
+                    <label for="message">Mensaje:</label>
+                    <textarea name="message" id="message" rows="6"></textarea>
+                </p>
+                <input class="mainBtn" type="submit" name="" value="Enviar">
+            </div> <!-- /.col-md-8 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.content-inner -->
+
+</div> <!-- /.stay-in-touch -->
+
+<div class="site-footer">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="copyright-text">Copyright &copy; 2019 Bits, Bytes & Cookies
+            </p>
+        </div>
+        <div class="col-md-6">
+            <div class="social-icons-footer">
+                <ul>
+                    <li><a target="_parent" href="" class="fab fa-facebook-f"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-linkedin-in"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fas fa-rss"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> <!-- /.site-footer -->
+
+</div> <!-- /.content-holder -->
+
+</div> <!-- /.col-md-10 -->
+</div> <!-- /.row -->
+</div> <!-- /.container -->
+
+
+<!-- Modal Login -->
+<div class="modal fade col-md-12" id="login-modal">         
+    <form class="form-horizontal templatemo-login-form-2" role="form" action="#" method="post">
+        <div class="row">
+            <div class="templatemo-one-signin col-md-6">
+                <div class="form-group">
+                  <div class="col-md-12">                   
+                    <label for="username" class="control-label">Usuario</label>
+                    <div class="templatemo-input-icon-container">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" id="username" placeholder="">
+                    </div>                                                          
+                </div>              
+            </div>
+            <div class="form-group">
+              <div class="col-md-12">
+                <label for="password" class="control-label">Contraseña</label>
+                <div class="templatemo-input-icon-container">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="form-control" id="password" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Recordar en este dispositivo
+              </label>
+          </div>
+      </div>
+  </div>
+  <div class="form-group">
+      <div class="col-md-12">
+        <input type="submit" value="Iniciar Sesión" class="btn btn-iniciar">
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-md-12">
+        <a href="forgot-password.html" class="text-center">¿Necesitas ayuda para iniciar sesión?</a>
+    </div>
+</div>
+</div>
+<div class="templatemo-other-signin col-md-6">
+    <label class="margin-bottom-15">
+        Iniciar sesión con:
+    </label>
+    <a class="btn btn-block btn-social btn-facebook margin-bottom-15">
+        <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a class="btn btn-block btn-social btn-twitter margin-bottom-15">
+        <i class="fab fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-block btn-social btn-google-plus">
+        <i class="fab fa-google"></i> Google
+    </a>
+</div>   
+</div>                  
+</form>                         
+</div>
+<!-- Fin Modal Login -->
+
+<!-- Modal Create Account-->
+<div class="modal fade col-md-12" id="create-account-modal">         
+    <div class="container">
+    
+            <form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="#" method="post">
+                <div class="form-inner">
+                    <div class="form-group">
+                      <div class="col-md-6">                    
+                        <label for="first_name" class="control-label">Nombre</label>
+                        <input type="text" class="form-control" id="first_name" placeholder=""></div> 
+              
+                      <div class="col-md-6">                    
+                        <label for="last_name" class="control-label">Apellido</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="">                                                          
+                      </div>             
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6">                   
+                        <label for="username" class="control-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="">                                                         
+                      </div>              
+
+                      <div class="col-md-6">                    
+                        <label for="username" class="control-label">Usuario</label>
+                        <input type="text" class="form-control" id="username" placeholder="">                                                           
+                      </div>
+                  </div>
+                                     <div class="form-group">
+                      <div class="col-md-6">
+                        <label for="password" class="control-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="password" class="control-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="password_confirm" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6">
+                        <label><input type="checkbox">He leído y acepto los<a href="javascript:;" data-toggle="modal" data-target="#terms_modal">Términos y Condiciones</a> y la <a href="javascript:;" data-toggle="modal" data-target="#privacy_modal">Pólitica de Privacidad</a></label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-6">
+                        <input type="submit" value="Crear cuenta" class="btn btn-create">
+                      </div>
+                    </div>  
+                </div>                      
+              </form>             
+ 
+    </div>
+    <!-- Modal Términos y Condiciones -->
+        <div class="modal fade" id="terms_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Términos y Condiciones</h4>
+          </div>
+          <div class="modal-body">
+            <p> Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Modal Privacidad -->
+        <div class="modal fade" id="privacy_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Pólitica de Privacidad</h4>
+          </div>
+          <div class="modal-body">
+            <p> Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+</div>
+<!-- Fin Modal Creat Account -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- /.main-content -->
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.lightbox.js"></script>
+<script src="js/templatemo_custom.js"></script>
+<script src="js/main.js"></script>
+<script src="js/charts.js"></script>
 <!-- templatemo 402 genius -->
 </body>
 </html>

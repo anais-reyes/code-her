@@ -111,6 +111,8 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
+
+
 	$(".main_menu .show-3").click(function(){
 		$(".bg-image").fadeOut('slow', function(){
 			$(this).css({
@@ -168,3 +170,7 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+
+/* Modal login*/
+
