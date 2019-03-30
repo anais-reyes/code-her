@@ -712,4 +712,28 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
 
   .text-darkgrey {
     color:#333 ;
+    font-weight: 700;
+  }
+
+  .text-green {
+    color:rgb(18, 122, 4) ;
+    font-weight: 700;
+  }
+
+
+  .text-red {
+    color:rgb(192, 4, 4) ;
+    font-weight: 700;
+  }
+
+
+  .choose-option {
+    color: black;
+    text-align: center;
+  }
+
+  .button-wrapper-movie-modal {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }

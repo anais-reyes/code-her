@@ -1,7 +1,14 @@
 
+var tests = [
+
+  {"name":"Bechdel", "questions":["Dos personajes femeninos con nombre identificado", "Que hablan entre si por mâs de 10 segundos","Sin referirse a un hombre en la plática"]}, 
+  {"name":"Uphold", "questions":["El 50% del equipo en set estâ conformado por mujeres"]}, 
+  {"name":"Vito Russo", "questions":["La película contiene un personaje que puede identificarse claramente como LGBTTTIQ", "El personaje no debe estar definido únicamente por su orientación sexual o identidad de género. Es decir, se compone de rasgos particulares al igual que los personajes heterosexuales. ", "El personaje LGBTTTIQ debe estar vinculado a la trama de tal forma que su eliminación tendría un efecto significativo en la historia", "El personaje no está ahí solamente para hacer comentarios jocosos, dibujar una falsa representación o hacer chistes"]}, 
+  
+  ]
 
 
-
+var movies = [];
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3bbf9e90716`)
     .then(response => response.json())
       .then(data => {
@@ -27,8 +34,10 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3
               <span>${element.release_date.slice(0, 4)}</span>
           </div> <!-- /.portfolio-item -->
       </div>`
-      if(i < 6) {
+      
+      if(i > 0 && i < 7) {
         document.getElementById('content-wrapper').innerHTML += item;
+        movies.push(element);
       }})
       showMoviesCatalog(data.results)
       addExpandOption();
@@ -140,8 +149,9 @@ function changeLogoutDisplay() {
 
 }
 
-
+var modalText;
 function seeMovieDetails(option) {
+modalText = document.getElementById('modal-body').innerHTML;
   Array.from(document.getElementsByClassName('movie-modal-button')).forEach(element => {
     element.style.display = 'none'
   })
@@ -164,9 +174,90 @@ function showMovieDetails() {
   document.getElementById('movie-content').style.display = 'block';
 }
 
+
+var movieTitle = ''
 function showMovieInfo(event) {
-  console.log(event.target)
+  emptyInfo();
+  var min = 1;
+  var max = 30;
+  var movieName = ''
+  movies.forEach(element => {
+    if(element.title.indexOf(event.target.dataset.name) !== -1 ){
+      movieName = element.title;
+    }
+  })
   document.getElementById('movie-poster').src = event.target.dataset.img;
-  document.getElementById('movie-name').innerHTML = event.target.dataset.name;
-  document.getElementById('movie-year').innerHTML = event.target.dataset.year;
+  document.getElementById('movie-name').innerHTML = movieName;
+  document.getElementById('movie-year').innerHTML = event.target.dataset.year.slice(0, 4);
+  var random = Math.floor(Math.random() * (max - min + 1)) + min;
+  document.getElementById("tests-applied").innerText = document.getElementById("tests-applied").innerText + ' ' + random;
+  var randomMinus = Math.floor(Math.random() * (random - min + 1)) + min;
+  document.getElementById("tests-passed").innerText = document.getElementById("tests-passed").innerText + ' ' + randomMinus;
+  document.getElementById('tests-wrong').innerText = document.getElementById('tests-wrong').innerText + ' ' + (random-randomMinus)
 }
+
+function emptyInfo() {
+  document.getElementById("tests-applied").innerText = 'Número de pruebas aplicadas';
+  document.getElementById('tests-passed').innerText = 'Número de pruebas aprobadas';
+  document.getElementById('tests-wrong').innerText = 'Número de pruebas no aprobadas';
+}
+
+document.getElementById('test-bechdel').addEventListener('click', showQuestions)
+document.getElementById('test-uphold').addEventListener('click', showQuestions)
+document.getElementById('test-vito').addEventListener('click', showQuestions)
+
+function showQuestions(e) {
+  var counter = 0;
+  var buttons = document.getElementsByClassName('test-button-modal')
+  Array.from(buttons).forEach(element => {
+    element.style.display = 'none';
+  })
+  tests.forEach((element, i) => {
+        if(element.name === e.target.innerText) {
+      localStorage.setItem('questions', JSON.stringify(element.questions));
+      document.getElementById('test-questions').innerHTML = `
+      <p id="current-question" class="text-darkgrey">${element.questions[counter]}</p>
+      <button onclick="nextQuestionYes()">Si</button>
+      <button onclick="nextQuestionNo()">No</button>
+        `
+    }
+  })
+}
+
+var result = 0
+function nextQuestionYes() {
+  result = result + 1;
+  nextQuestion();
+  
+
+}
+
+function nextQuestionNo() {
+  nextQuestion();
+}
+
+function nextQuestion() {
+  var passed;
+  let test = JSON.parse(localStorage.getItem('questions'))
+  let counter = test.indexOf(document.getElementById('current-question').innerText);
+  if(counter < test.length - 1) {
+    document.getElementById('current-question').innerText = test[counter + 1];
+  } else {
+    passed = result === test.length ? 'Aprobada' : 'No aprobada';
+    addTextPassed(passed)
+    console.log(passed)
+  }
+}
+
+function addTextPassed(text) {
+  document.getElementById('test-questions').innerHTML = `<p class="text-darkgrey">Resultado: ${text}</p>`
+}
+
+function cleanModal() {
+  document.getElementById('movie-content').style.display = 'none';
+  document.getElementById('movie-content').style.display = 'none';
+  Array.from(document.getElementsByClassName('movie-modal-button')).forEach(element => {
+    element.style.display = 'block'
+  })
+}
+localStorage.clear();
