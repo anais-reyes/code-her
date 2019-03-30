@@ -672,3 +672,44 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
      border: none;
      font-weight: 700;
    }
+
+   .fa-envelope {
+     margin-right: 5px;
+   }
+
+   .modal-content-movie {
+     background: white;
+   }
+
+   .movie-modal-button {
+     
+     background: #ca3074;
+     color: white;
+     border: none;
+     border-radius: 3px;
+     margin-left: 20px;
+   }
+
+
+   .close-movie-modal {
+    background: #9ae1e2;
+     color: white;
+   }
+
+   .close-movie-modal:hover {
+     color: #9ae1e2;
+     background: white;
+   }
+
+   .modal-footer-movie {
+     border: none;
+   }
+
+   .text-bold {
+    font-weight: 700;
+  }
+
+
+  .text-darkgrey {
+    color:#333 ;
+  }

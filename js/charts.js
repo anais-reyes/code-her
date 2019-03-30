@@ -29,7 +29,7 @@ var charts = [
           label: 'My First dataset',
           backgroundColor: ['#3d1e6d', '#9Ae1e2'],
           borderColor: 'gray',
-          data: [40, 60]
+          data: [25, 75]
         }]
       }, 
       options: {
@@ -48,7 +48,7 @@ var charts = [
           label: 'My First dataset',
           backgroundColor: ['#3d1e6d', '#9Ae1e2'],
           borderColor: 'gray',
-          data: [40, 60]
+          data: [30, 70]
         }]
       }, 
       options: {
@@ -86,7 +86,7 @@ var charts = [
           label: 'My First dataset',
           backgroundColor: ['#3d1e6d', '#9Ae1e2'],
           borderColor: 'gray',
-          data: [50, 50]
+          data: [52, 48]
         }]
       }, 
       options: {

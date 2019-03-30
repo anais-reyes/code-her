@@ -1412,7 +1412,6 @@ http://www.templatemo.com/tm-402-genius
 <!-- Modal Create Account-->
 <div class="modal fade col-md-12" id="create-account-modal">         
     <div class="container">
-    
             <form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="#" method="post">
                 <div class="form-inner">
                     <div class="form-group">
@@ -1510,20 +1509,27 @@ http://www.templatemo.com/tm-402-genius
 <!-- Modal Película -->
 <div class="modal fade" id="movie_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
+      <div class="modal-content modal-content-movie">
+        <div class="modal-header modal-movie-header">
             
         </div>
-        <div class="modal-body">
-            <div>
-                <button>Evaluar película</button>
-            </div>
-            <div>
-                <button>Ver resultados</button>
-            </div>
+        <div class="modal-body">   
+                <button onclick="seeMovieDetails('apply-test')" class="movie-modal-button" id="apply-test">Evaluar película</button>
+                <button onclick="seeMovieDetails('see-results')" class="movie-modal-button" id="see-results">Ver resultados</button>
+                <div id="test-content">
+                    Encuesta
+                </div>
+                <div id="movie-content">
+                    <img id="movie-poster" src="" alt="">
+                    <p id="movie-name" class="bold text-darkgrey">Name</p>
+                    <p id="movie-year" class="bold text-darkgrey">Year</p>
+                    <p>Número de pruebas aplicadas:</p>
+                    <p>Número de pruebas aprobadas:</p>
+                    <p>Número de pruebas no aprobadas:</p>
+                </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <div class="modal-footer modal-footer-movie">
+          <button type="button" class="btn btn-default close-movie-modal" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
