@@ -67,13 +67,13 @@ http://www.templatemo.com/tm-402-genius
                 </div>
                 <!--Bienvenida Usuario-->        
                 <a class="#userprofile"> <i class="fa fa-user"></i>        </a>
-                <p> Bienvenida Mary Shelley</p>
+                <p id="welcome" class="none"> Bienvenida Mary Shelley</p>
 
                 <!-- Fin Bienvenida Usuario-->   
 
                 <!--Boton Iniciar Sesión-->        
 
-                <button type="button" class="login-button" data-toggle="modal" data-target="#login-modal"> Iniciar sesión</button>
+                <button type="button" class="login-button" data-toggle="modal" data-target="#login-modal" > Iniciar sesión</button>
 
                 <!-- Fin Botón Iniciar/Cerrar Sesión /-->
 
@@ -82,6 +82,7 @@ http://www.templatemo.com/tm-402-genius
                 <button type="button" class="login-button" data-toggle="modal" data-target="#create-account-modal"> Crear cuenta</button>
 
                 <!-- Fin Botón Iniciar/Cerrar Sesión /-->      
+                <button type="button" class="logout-button" id="logout-button" onclick="logOut()"> Cerrar Sesión</button>
 
             </div> <!-- /.col-md-12 -->
 
@@ -135,7 +136,7 @@ http://www.templatemo.com/tm-402-genius
                             <li><a class="show-2" href="views/about.html" data-toggle="tooltip" data-original-title="Acerca de"><i class="fa fa-book"></i></a></li>
                             <li><a class="show-3" href="#" data-toggle="tooltip" data-original-title="Películas"><i class="fa fa-film"></i></a></li>
                             <li><a class="show-4" href="#" data-toggle="tooltip" data-original-title="Tests"><i class="fa fa-tasks"></i></a></li>
-                            <li><a class="show-5" href="#" data-toggle="tooltip" data-original-title="Gráficas"><i class="fa fa-chart-pie"></i></i></a></li>
+                            <li><a class="show-5" href="#" data-toggle="tooltip" data-original-title="Gráficas" id="chart-icon"><i class="fa fa-chart-pie"></i></i></a></li>
                             <li><a class="show-6" href="#" data-toggle="tooltip" data-original-title="Contacto"><i class="fa fa-envelope"></i></a></li>
                         </ul>
                     </div> <!-- /.main-menu -->
@@ -167,6 +168,9 @@ http://www.templatemo.com/tm-402-genius
                                 <div class="page-header mb-40">
                                     <h2 class="page-title">Últimas películas añadidas</h2>
                                 </div> <!-- /.page-header -->
+                                <div class="row">
+                                    <button class="login-button add-movie" id="add-movie">Agregar película</button>
+                                </div>
 
 
                             </div> <!-- /.row -->
@@ -244,6 +248,9 @@ http://www.templatemo.com/tm-402-genius
                       
                 </div> <!-- /#Grid -->
             </div> <!-- /.row -->
+            <div class="row">
+                <button class="login-button add-movie" id="add-movie-c">Agregar película</button>
+            </div>
 
                                         <!-- Pagination home-->
                             <nav aria-label="Page navigation example">
@@ -370,7 +377,6 @@ http://www.templatemo.com/tm-402-genius
           Deggans Rule
       </button>
   </h2>
-
 </div>
 <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionTest">
   <div class="card-body">
@@ -1237,19 +1243,19 @@ http://www.templatemo.com/tm-402-genius
         <div class="row services">
             <div class="col-md-12 center">
              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
+                <li class="nav-item" onclick="manageTabs('general')">
                   <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true" onclick="createChart('general')">General</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="manageTabs('behind')">
                   <a class="nav-link" id="behind-tab" data-toggle="tab" href="#behind" role="tab" aria-controls="behind" aria-selected="false" onclick="createChart('behind')">Detrás de cámaras</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" onclick="manageTabs('front')">
                 <a class="nav-link" id="front-tab" data-toggle="tab" href="#front" role="tab" aria-controls="front" aria-selected="false" onclick="createChart('front')">Frente a la cámara</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" onclick="manageTabs('genre')">
                 <a class="nav-link" id="genre-tab" data-toggle="tab" href="#genre" role="tab" aria-controls="genre" aria-selected="false" onclick="createChart('genre')">Por género</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" onclick="manageTabs('country')">
                 <a class="nav-link" id="country-tab" data-toggle="tab" href="#country" role="tab" aria-controls="country" aria-selected="false" onclick="createChart('country')">Por país de origen</a>
             </li>
         </ul>
@@ -1394,7 +1400,7 @@ http://www.templatemo.com/tm-402-genius
     <a class="btn btn-block btn-social btn-twitter margin-bottom-15">
         <i class="fab fa-twitter"></i> Twitter
     </a>
-    <a class="btn btn-block btn-social btn-google-plus">
+    <a class="btn btn-block btn-social btn-google-plus" onclick="logIn()">
         <i class="fab fa-google"></i> Google
     </a>
 </div>   
@@ -1523,6 +1529,12 @@ http://www.templatemo.com/tm-402-genius
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/jquery.lightbox.js"></script>
 <script src="js/templatemo_custom.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-functions.js"></script>
 <script src="js/main.js"></script>
 <script src="js/charts.js"></script>
 <!-- templatemo 402 genius -->

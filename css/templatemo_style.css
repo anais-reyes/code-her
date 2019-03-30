@@ -624,9 +624,9 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
 
 /* Fin Descripción Test*/
 
-.pull-chart {
+/* .pull-chart {
   margin-top: -345px;
-}
+} */
 
 .push-chart {
   margin-top: 30px;
@@ -636,3 +636,39 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
 .movie-card {
   min-height: 570px;
 }
+
+.none {
+  display: none;
+}
+
+
+.block {
+  display: block;
+}
+
+
+.logout-button {
+  
+    background-color: black;
+    color:#fff;
+    border:none;
+    font-weight: 700;
+    margin-left: auto;
+  
+   }
+  
+  .logout-button:hover{
+    background-color: black;
+    color:#ca3074;
+    border:none;
+    font-weight: 700;
+   }
+
+   .add-movie {
+     margin-left: auto;
+     display: block;
+     background-color: #ca3074;
+     color:#fff;
+     border: none;
+     font-weight: 700;
+   }
