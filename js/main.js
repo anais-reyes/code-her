@@ -7,11 +7,19 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3
       .then(data => {
         data.results.forEach((element, i) => {
           let path = "https://image.tmdb.org/t/p/w300_and_h450_bestv2" + element.poster_path;
-          let item = `<div class="col-md-4 col-sm-6 col-xs-6 movie-card">
+          let item = `<div class="col-md-4 col-sm-6 col-xs-6">
             <div class="portfolio-item">
               <div class="overlay">
-                  <a href="javascript:;" data-toggle="modal" data-target="#movie_modal">
-                      <i class="fa fa-expand"></i>
+                  <a href="javascript:;" data-toggle="modal" data-target="#movie_modal" class="movie-expand" 
+                      data-name=${element.title}
+                      data-img=${path}
+                      data-year=${element.release_date}
+                      >
+                      <i class="fa fa-expand" 
+                      data-name=${element.title}
+                      data-img=${path}
+                      data-year=${element.release_date}
+                      ></i>
                   </a>
               </div>
               <img src=${path} alt="Image 2">
@@ -23,8 +31,16 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3
         document.getElementById('content-wrapper').innerHTML += item;
       }})
       showMoviesCatalog(data.results)
+      addExpandOption();
       })
 
+function addExpandOption() {
+  links = document.getElementsByClassName('movie-expand')
+  Array.from(links).forEach(element => {
+    element.addEventListener('click', showMovieInfo)
+  })
+  
+}
 
 function showMoviesCatalog(movies) {
 movies.forEach((element, i) => {
@@ -122,7 +138,35 @@ function changeLogoutDisplay() {
   document.getElementById('add-movie').style.display = 'none';
   document.getElementById('add-movie-c').style.display = 'none';
 
-
-
 }
 
+
+function seeMovieDetails(option) {
+  Array.from(document.getElementsByClassName('movie-modal-button')).forEach(element => {
+    element.style.display = 'none'
+  })
+  if(option === 'apply-test') {
+    showTest();
+  } else {
+    showMovieDetails();
+  }
+}
+
+document.getElementById('test-content').style.display = 'none';
+document.getElementById('movie-content').style.display = 'none';
+
+
+function showTest() {
+  document.getElementById('test-content').style.display = 'block';
+}
+
+function showMovieDetails() {
+  document.getElementById('movie-content').style.display = 'block';
+}
+
+function showMovieInfo(event) {
+  console.log(event.target)
+  document.getElementById('movie-poster').src = event.target.dataset.img;
+  document.getElementById('movie-name').innerHTML = event.target.dataset.name;
+  document.getElementById('movie-year').innerHTML = event.target.dataset.year;
+}
