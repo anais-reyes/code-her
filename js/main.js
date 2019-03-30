@@ -1,3 +1,7 @@
+
+
+
+
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3bbf9e90716`)
     .then(response => response.json())
       .then(data => {
@@ -6,7 +10,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3
           let item = `<div class="col-md-4 col-sm-6 col-xs-6 movie-card">
             <div class="portfolio-item">
               <div class="overlay">
-                  <a href="views/movie.html" data-rel="lightbox">
+                  <a href="javascript:;" data-toggle="modal" data-target="#movie_modal">
                       <i class="fa fa-expand"></i>
                   </a>
               </div>
@@ -39,7 +43,7 @@ movies.forEach((element, i) => {
             </div> <!-- /.portfolio-item -->
           </div>
           `
-      if(i < 6) {
+      if(i > 6 && i < 13) {
         document.getElementById('Grid').innerHTML += item;
       }
 
