@@ -623,3 +623,16 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
 
 
 /* Fin Descripción Test*/
+
+.pull-chart {
+  margin-top: -345px;
+}
+
+.push-chart {
+  margin-top: 30px;
+}
+
+
+.movie-card {
+  min-height: 570px;
+}

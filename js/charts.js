@@ -7,7 +7,7 @@ var charts = [
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['blue', 'red'],
+          backgroundColor: ['blue', 'pink'],
           //borderColor: 'rgb(255, 99, 132)',
           data: [40, 60]
         }]
@@ -16,12 +16,12 @@ var charts = [
    {
     section: 'behind',
     domNode: 'behindChart',
-    type: 'line',
+    type: 'pie',
     data: {
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['blue', 'red'],
+          backgroundColor: ['salmon', 'blue'],
           data: [40, 60]
         }]
       }
@@ -42,7 +42,7 @@ var charts = [
    {
     section: 'genre',
     domNode: 'genreChart',
-    type: 'line',
+    type: 'pie',
     data: {
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
@@ -55,7 +55,7 @@ var charts = [
    {
     section: 'country',
     domNode: 'countryChart',
-    type: 'bar',
+    type: 'pie',
     data: {
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
