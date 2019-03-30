@@ -1511,25 +1511,32 @@ http://www.templatemo.com/tm-402-genius
     <div class="modal-dialog">
       <div class="modal-content modal-content-movie">
         <div class="modal-header modal-movie-header">
-            
         </div>
-        <div class="modal-body">   
-                <button onclick="seeMovieDetails('apply-test')" class="movie-modal-button" id="apply-test">Evaluar película</button>
-                <button onclick="seeMovieDetails('see-results')" class="movie-modal-button" id="see-results">Ver resultados</button>
+        <div class="modal-body" id="modal-body">
+            <div id="option-modal">
+                <p class="choose-option mb-40">Selecciona una opción</p>
+                <div class="button-wrapper-movie-modal">
+                        <button onclick="seeMovieDetails('apply-test')" class="movie-modal-button" id="apply-test">Evaluar película</button>
+                        <button onclick="seeMovieDetails('see-results')" class="movie-modal-button" id="see-results">Ver resultados</button>
+                </div>
+            </div>   
                 <div id="test-content">
-                    Encuesta
+                    <button id="test-bechdel" class="test-button-modal">Bechdel</button>
+                    <button id="test-uphold" class="test-button-modal">Uphold</button>
+                    <button id="test-vito" class="test-button-modal">Vito Russo</button>
+                    <div id="test-questions"></div>
                 </div>
                 <div id="movie-content">
                     <img id="movie-poster" src="" alt="">
                     <p id="movie-name" class="bold text-darkgrey">Name</p>
                     <p id="movie-year" class="bold text-darkgrey">Year</p>
-                    <p>Número de pruebas aplicadas:</p>
-                    <p>Número de pruebas aprobadas:</p>
-                    <p>Número de pruebas no aprobadas:</p>
+                    <p id="tests-applied"class="bold text-darkgrey empty">Número de pruebas aplicadas:</p>
+                    <p id="tests-passed"class="bold text-green empty">Número de pruebas aprobadas:</p>
+                    <p id="tests-wrong"class="bold text-red empty">Número de pruebas no aprobadas:</p>
                 </div>
         </div>
         <div class="modal-footer modal-footer-movie">
-          <button type="button" class="btn btn-default close-movie-modal" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-default close-movie-modal" data-dismiss="modal" onclick="cleanModal()">Cerrar</button>
         </div>
       </div>
     </div>
@@ -1569,6 +1576,7 @@ http://www.templatemo.com/tm-402-genius
 <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-functions.js"></script>
 <script src="js/main.js"></script>
 <script src="js/charts.js"></script>
+<script src="tests.js"></script>
 <!-- templatemo 402 genius -->
 </body>
 </html>
