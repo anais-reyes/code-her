@@ -119,10 +119,6 @@ function changeLogoutDisplay() {
   document.getElementById('add-movie-c').style.display = 'none';
 
 
-=======
-
-
-
-});
 
 }
+
