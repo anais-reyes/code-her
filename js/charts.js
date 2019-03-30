@@ -8,7 +8,6 @@ var charts = [
         datasets: [{
           label: 'My First dataset',
           backgroundColor: ['blue', 'pink'],
-          //borderColor: 'rgb(255, 99, 132)',
           data: [40, 60]
         }]
       }
