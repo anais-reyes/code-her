@@ -43,6 +43,7 @@ movies.forEach((element, i) => {
         document.getElementById('Grid').innerHTML += item;
       }
 
+
 })
 }
 var provider = new firebase.auth.GoogleAuthProvider();
@@ -117,5 +118,11 @@ function changeLogoutDisplay() {
   document.getElementById('add-movie').style.display = 'none';
   document.getElementById('add-movie-c').style.display = 'none';
 
+
+=======
+
+
+
+});
 
 }
