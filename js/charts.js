@@ -7,7 +7,8 @@ var charts = [
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['blue', 'pink'],
+          backgroundColor: ['#3d1e6d', '#9Ae1e2'],
+          borderColor: 'gray',
           data: [40, 60]
         }]
       },
@@ -26,7 +27,8 @@ var charts = [
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['salmon', 'blue'],
+          backgroundColor: ['#3d1e6d', '#9Ae1e2'],
+          borderColor: 'gray',
           data: [40, 60]
         }]
       }, 
@@ -44,7 +46,8 @@ var charts = [
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['purple', 'white'],
+          backgroundColor: ['#3d1e6d', '#9Ae1e2'],
+          borderColor: 'gray',
           data: [40, 60]
         }]
       }, 
@@ -62,7 +65,8 @@ var charts = [
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['green', 'purple'],
+          backgroundColor: ['#3d1e6d', '#9Ae1e2'],
+          borderColor: 'gray',
           data: [20, 80]
         }]
       }, 
@@ -80,7 +84,8 @@ var charts = [
       labels: ['Aprobadas', 'No Aprobadas'],
         datasets: [{
           label: 'My First dataset',
-          backgroundColor: ['blue', 'red'],
+          backgroundColor: ['#3d1e6d', '#9Ae1e2'],
+          borderColor: 'gray',
           data: [50, 50]
         }]
       }, 
@@ -123,8 +128,6 @@ function manageTabs(tab) {
  
   if(tab === 'general') {
     document.getElementById('general').style.display = 'block';
-   
-
   } else {
     document.getElementById('general').style.display = 'none';
     document.getElementById('general').classList.add('fade');
