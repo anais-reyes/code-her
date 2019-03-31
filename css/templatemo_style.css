@@ -737,3 +737,22 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
     display: flex;
     justify-content: center;
   }
+
+
+  .test-button-modal, .result-button {
+    background: #ca3074;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+  }
+
+
+  .donate {
+    margin-top: 10px;
+    background: #2c7697;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    float: left;
+  }

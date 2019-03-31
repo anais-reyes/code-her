@@ -149,12 +149,14 @@ function changeLogoutDisplay() {
 
 }
 
-var modalText;
+
 function seeMovieDetails(option) {
-modalText = document.getElementById('modal-body').innerHTML;
+  var title = document.getElementsByClassName('choose-option');
+  title[0].style.display = 'none'
   Array.from(document.getElementsByClassName('movie-modal-button')).forEach(element => {
     element.style.display = 'none'
   })
+  
   if(option === 'apply-test') {
     showTest();
   } else {
@@ -217,8 +219,8 @@ function showQuestions(e) {
       localStorage.setItem('questions', JSON.stringify(element.questions));
       document.getElementById('test-questions').innerHTML = `
       <p id="current-question" class="text-darkgrey">${element.questions[counter]}</p>
-      <button onclick="nextQuestionYes()">Si</button>
-      <button onclick="nextQuestionNo()">No</button>
+      <button onclick="nextQuestionYes()" class="result-button">Si</button>
+      <button onclick="nextQuestionNo()" class="result-button">No</button>
         `
     }
   })
@@ -254,10 +256,14 @@ function addTextPassed(text) {
 }
 
 function cleanModal() {
+  var title = document.getElementsByClassName('choose-option');
+  title[0].style.display = 'block'
   document.getElementById('movie-content').style.display = 'none';
-  document.getElementById('movie-content').style.display = 'none';
+  document.getElementById('test-content').style.display = 'none';
   Array.from(document.getElementsByClassName('movie-modal-button')).forEach(element => {
     element.style.display = 'block'
   })
+  var buttons = document.getElementsByClassName('test-button-modal')
+
 }
 localStorage.clear();
