@@ -623,3 +623,136 @@ box-shadow: 10px 10px 78px 0px rgba(0,0,0,0.75);
 
 
 /* Fin Descripción Test*/
+
+/* .pull-chart {
+  margin-top: -345px;
+} */
+
+.push-chart {
+  margin-top: 30px;
+}
+
+
+.movie-card {
+  min-height: 570px;
+}
+
+.none {
+  display: none;
+}
+
+
+.block {
+  display: block;
+}
+
+
+.logout-button {
+  
+    background-color: black;
+    color:#fff;
+    border:none;
+    font-weight: 700;
+    margin-left: auto;
+  
+   }
+  
+  .logout-button:hover{
+    background-color: black;
+    color:#ca3074;
+    border:none;
+    font-weight: 700;
+   }
+
+   .add-movie {
+     margin-left: auto;
+     display: block;
+     background-color: #ca3074;
+     color:#fff;
+     border: none;
+     font-weight: 700;
+   }
+
+   .fa-envelope {
+     margin-right: 5px;
+   }
+
+   .modal-content-movie {
+     background: white;
+   }
+
+   .movie-modal-button {
+     
+     background: #ca3074;
+     color: white;
+     border: none;
+     border-radius: 3px;
+     margin-left: 20px;
+   }
+
+
+   .close-movie-modal {
+    background: #9ae1e2;
+     color: white;
+   }
+
+   .close-movie-modal:hover {
+     color: #9ae1e2;
+     background: white;
+   }
+
+   .modal-footer-movie {
+     border: none;
+   }
+
+   .text-bold {
+    font-weight: 700;
+  }
+
+
+  .text-darkgrey {
+    color:#333 ;
+    font-weight: 700;
+  }
+
+  .text-green {
+    color:rgb(18, 122, 4) ;
+    font-weight: 700;
+  }
+
+
+  .text-red {
+    color:rgb(192, 4, 4) ;
+    font-weight: 700;
+  }
+
+
+  .choose-option {
+    color: black;
+    text-align: center;
+  }
+
+  .button-wrapper-movie-modal {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .test-button-modal, .result-button {
+    background: #ca3074;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 20px;
+  }
+
+
+  .donate {
+    margin-top: 10px;
+    background: #2c7697;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    float: left;
+  }
